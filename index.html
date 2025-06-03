@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Everything you need in a modern bank and more"
+    />
+    <meta name="keywords" content="Online bank, Bankist bank, Fictional bank" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Bankist" />
+    <meta
+      property="og:description"
+      content="Everything you need in a modern bank and more"
+    />
+    <meta property="og:image" content="images/logo.webp" />
+    <meta property="og:url" content="https://bankist-bank.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <link rel="shortcut icon" type="image/png" href="images/icon.webp" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <title>
+      BankaAL Aplikacion Virtual për Menaxhimin e Financave Personale
+    </title>
+    <script defer="" src="js/index.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="images/BANKAAL (1).png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Veçori</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Opsionet</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonial</a>
+          </li>
+          <li class="nav__item">
+            <a
+              class="nav__link nav__link--btn btn--show-modal"
+              href="./login/login.html"
+              >Hap Llogari</a
+            >
+          </li>
+        </ul>
+        <img class="hamburger" src="images/hamburger.webp" alt="Open menu" />
+      </nav>
+
+      <div class="header__title">
+        <section class="header-content">
+          <h1>
+            Kur
+            <!-- Green highlight effect -->
+            <span class="highlight">Banka</span>
+            Takohet<br />
+            <span class="highlight">Me Minimalizem</span>
+          </h1>
+          <h2>Një përvojë më e thjeshtë bankare për një jetë më të lehtë.</h2>
+          <a class="btn--text" href="#section--2">Mëso më shumë ↓</a>
+        </section>
+
+        <img
+          src="images/hero.webp"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section section-1" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Gjithçka që të duhet në një bankë moderne – dhe më shumë.
+        </h3>
+      </div>
+
+      <div class="features">
+        <section class="feature-one">
+          <img
+            src="images/imazhbank.jpg"
+            data-src="./images/imazhbank.jpg"
+            alt="Computer"
+            class="features__img lazy-img"
+          />
+          <div class="features__feature">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="images/icons.svg#icon-monitor"></use>
+              </svg>
+            </div>
+            <h5 class="features__header">100% Digjitale</h5>
+            <p>
+              Harro sportelet! Me BankaAL gjithçka ndodh online – menaxho paratë
+              kudo, kurdo, në një platformë të sigurt dhe të lehtë për t’u
+              përdorur.
+            </p>
+          </div>
+        </section>
+        <section class="feature-two">
+          <div class="features__feature">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="images/icons.svg#icon-trending-up"></use>
+              </svg>
+            </div>
+            <h5 class="features__header">Shih paratë të rriten</h5>
+            <p>
+              Përfito nga norma konkurruese interesi dhe mjete kursimi të
+              zgjuara. Paneli ynë i thjeshtuar të jep një pamje të qartë të
+              progresit tënd financiar.
+            </p>
+          </div>
+          <img
+            src="images/imazhbank2.jpg"
+            data-src="./images/imazhbank2.jpg"
+            alt="Plant"
+            class="features__img lazy-img"
+          />
+        </section>
+        <section class="feature-three">
+          <img
+            src="images/imazhbank1.jpg"
+            data-src="./images/imazhbank1.jpg"
+            alt="Credit card"
+            class="features__img lazy-img"
+          />
+          <div class="features__feature">
+            <div class="features__icon">
+              <svg>
+                <use xlink:href="images/icons.svg#icon-credit-card"></use>
+              </svg>
+            </div>
+            <h5 class="features__header">Kartë debiti pa pagesë</h5>
+            <p>
+              Merr kartën tënde të debitit – pa tarifa të fshehura. Paguaj kudo,
+              tërhiq para dhe shijo transaksione pa stres, globalisht.
+            </p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operacionet</h2>
+        <h3 class="section__header">E thjeshtë… por jo më shumë seç duhet.</h3>
+      </div>
+
+      <section class="operations">
+        <section class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Transferime të menjëhershme
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Kredi të menjëhershme
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Mbyllje e llogarisë me një klikim
+          </button>
+        </section>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="images/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Transfero para brenda sekondash, pa tarifa. Dërgo fonde shpejt,
+            sigurt dhe pa vonesa.
+          </h5>
+          <p>
+            Shijo lirinë për të dërguar para te kushdo, kudo, me vetëm disa trokitje. Funksioni ynë i transferimit të menjëhershëm siguron që fondet të arrijnë në destinacion për pak sekonda. Pa tarifa dhe pa kosto të fshehura, mund të transferosh para pa asnjë problem. Përjeto transaksione të shpejta, të sigurta dhe të lehta që e bëjnë menaxhimin e financave më të thjeshtë dhe më efikas.
+
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="images/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Apliko për kredi pa letra dhe merr përgjigje menjëherë.
+          </h5>
+          <p>
+           Qoftë nëse dëshiron të blesh shtëpinë e ëndrrave apo të financosh një projekt personal, kreditë tona të menjëhershme të ofrojnë mbështetjen financiare që të duhet. Me aprovime të shpejta dhe norma konkurruese, mund t’i arrish qëllimet e tua pa pritur gjatë. Përjeto një proces aplikimi të lehtë dhe merr fondet që të duhen për ta kthyer ëndrrën në realitet.
+
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="images/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Nuk jemi të lidhur me fije të padukshme. Largohe kur të duash, me
+            një klik
+          </h5>
+          <p>
+           Nëse ndonjëherë vendos të mbyllësh llogarinë tënde, ne e kemi bërë procesin të thjeshtë dhe pa mundim. Me vetëm disa klikime, mund ta mbyllësh llogarinë menjëherë, pa tarifa të fshehura apo procedura të gjata. Shijo lirinë dhe fleksibilitetin për të menaxhuar nevojat e tua bankare sipas kushteve të tua.
+
+          </p>
+        </div>
+      </section>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Ende nuk je i sigurt?</h2>
+        <h3 class="section__header">
+         Mijëra përdorues të BankaAL e kanë bërë jetën më të thjeshtë.
+      </div>
+
+      <div class="slider">
+        <div class="slide slide--1">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Vendimi më i mirë financiar që kam marrë!</h5>
+            <blockquote class="testimonial__text">
+             Zgjodha BankaAL për shkak të lehtësisë, sigurisë dhe transparencës. Gjithçka që më duhet, në një aplikacion.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="images/user-1.webp"
+                alt=""
+                aria-hidden="true"
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Aarav Lynn</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--2">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+             Hapi i fundit drejt minimalizmit.
+            </h5>
+            <blockquote class="testimonial__text">
+              S’më duhen më letra, radha e as pritje. BankaAL është thjeshtësia që më mungonte.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="images/user-2.webp"
+                alt=""
+                aria-hidden="true"
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Miyah Miles</h6>
+              <p class="testimonial__location">London, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide slide--3">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+             Më në fund i lirë nga bankat e vjetra!
+            </h5>
+            <blockquote class="testimonial__text">
+           E lashë pas kompleksitetin. Me këtë aplikacion, gjithçka bëhet shpejt, qartë dhe në kontrollin tim.
+            </blockquote>
+            <address class="testimonial__author">
+              <img
+                src="images/user-3.webp"
+                alt=""
+                aria-hidden="true"
+                class="testimonial__photo"
+              />
+              <h6 class="testimonial__name">Francisco Gomes</h6>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
+        <button class="slider__btn slider__btn--left">←</button>
+        <button class="slider__btn slider__btn--right">→</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+     Dita më e mirë për t’u bashkuar ishte dje.
+E dyta më e mirë është sot!!
+        </h3>
+      </div>
+      <a
+        class="nav__link nav__link--btn btn--show-modal"
+        href="./login/login.html"
+        >Hap llogarinë tënde falas tani!</a
+      >
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="images/icon.webp" alt="Bankist logo" class="footer__logo" />
+      <p class="footer__copyright">
+        © Copyright by Elion Hasa, Lorena Kulli, Sidorela Sadiku, 
+      
+      </p>
+    </footer>
+
+    <div class="overlay hidden"></div>
+  </body>
+</html>
