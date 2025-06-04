@@ -51,12 +51,20 @@
             <a class="nav__link" href="#section--3">Testimonial</a>
           </li>
           <li class="nav__item">
+  <a class="nav__link" href="#section--4">Harta</a>
+</li>
+<li class="nav__item">
+  <a class="nav__link" href="#section--5">Kontakt</a>
+</li>
+
+          <li class="nav__item">
             <a
               class="nav__link nav__link--btn btn--show-modal"
               href="./login/login.html"
               >Hap Llogari</a
             >
           </li>
+          
         </ul>
         <img class="hamburger" src="images/hamburger.webp" alt="Open menu" />
       </nav>
@@ -299,7 +307,82 @@
         <button class="slider__btn slider__btn--right">→</button>
         <div class="dots"></div>
       </div>
+
     </section>
+    <section class="section" id="section--4">
+  <div class="section__title">
+    <h2 class="section__description">Vendndodhja</h2>
+    <h3 class="section__header">Na gjeni këtu</h3>
+  </div>
+  <div style="width: 100%; height: 400px;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.887973495611!2d19.81888951541873!3d41.32754597927001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350310f9b8d6101%3A0x74eb7fc27c4b03f5!2sTirana%2C%20Albania!5e0!3m2!1sen!2s!4v1717521234567"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</section>
+<section class="section" id="section--5">
+  <div class="section__title">
+    <h2 class="section__description">Kontakto</h2>
+    <h3 class="section__header">Na dërgo një mesazh</h3>
+  </div>
+  <form id="contactForm" style="max-width: 600px; margin: auto;">
+    <label for="email">Email-i:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="Shkruaj email-in"
+      required
+      style="width: 100%; padding: 10px; margin: 10px 0;"
+    />
+    <label for="message">Mesazhi:</label>
+    <textarea
+      id="message"
+      name="message"
+      placeholder="Shkruaj mesazhin tënd"
+      rows="5"
+      required
+      style="width: 100%; padding: 10px;"
+    ></textarea>
+    <button
+      type="submit"
+      style="margin-top: 15px; padding: 10px 20px; background-color: #5ec576; color: white; border: none; cursor: pointer;"
+    >
+      Dërgo
+    </button>
+    <p id="formMessage" style="margin-top: 10px;"></p>
+  </form>
+</section>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    const feedback = document.getElementById("formMessage");
+
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if (!emailPattern.test(email)) {
+      feedback.style.color = "red";
+      feedback.textContent = "Ju lutem shkruani një email të vlefshëm.";
+    } else if (message.trim() === "") {
+      feedback.style.color = "red";
+      feedback.textContent = "Mesazhi nuk mund të jetë bosh.";
+    } else {
+      feedback.style.color = "green";
+      feedback.textContent = "Faleminderit! Mesazhi juaj u dërgua me sukses.";
+      document.getElementById("contactForm").reset();
+    }
+  });
+</script>
+
 
     <section class="section section--sign-up">
       <div class="section__title">
